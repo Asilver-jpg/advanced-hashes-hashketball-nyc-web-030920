@@ -42,8 +42,10 @@ def make_player (name, number, shoe, points, rebounds, assists, steals, blocks, 
 :rebounds => rebounds,
 :assists => assists,
 :steals => steals,
-:blocks => blocks
-:slam_dunks => slam_dunks}
+:blocks => blocks,
+:slam_dunks => slam_dunks
+    
+  }
   player_hash
 end
 
