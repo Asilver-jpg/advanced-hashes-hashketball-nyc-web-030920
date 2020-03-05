@@ -58,7 +58,7 @@ def player_numbers (team_name)
 numbers = []
   hash.each do |team, value|
     binding.pry
-    if team[:team_name] == team_name
+    if value[:team_name] == team_name
       value[:players].each do |player|
       numbers.push(player[:number])
       end
