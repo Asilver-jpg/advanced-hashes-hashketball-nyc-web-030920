@@ -12,9 +12,8 @@ def game_hash()
       :colors => make_colors("Turquoise", "Purple"),
       :players => make_away()
     }
-    
   }
-  binding.pry
+ 
   game
 end
 
