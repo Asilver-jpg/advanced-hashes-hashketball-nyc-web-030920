@@ -49,9 +49,38 @@ end
 end
 
 def player_numbers (team_name)
-  
-  
+  hash= game_hash
+numbers =[]
+  hash.each do |team|
+    if team[:team_name] = team_name
+      team[:players].each do |player|
+      numbers.push(player[:number])
+      end
+    end
+  end
+  numbers
 end
+
+def player_stats(name)
+   hash= game_hash
+  stats ={}
+  hash.each do |team|
+    team[:players].each do |player|
+      if player == name
+      stats = {
+        
+        
+        
+        
+      }
+      end
+    end
+      end
+    end
+  end
+  numbers
+end
+
 ## hash creation methods
 def make_colors(*args)
   color_arr= []
