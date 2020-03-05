@@ -16,19 +16,43 @@ def game_hash()
  
   game
 end
-
+## methods
 def num_points_scored (player)
   hash= game_hash
-  game_hash.each do |team|
+  hash.each do |team|
     team[:players].each do |p|
      if p[:player_name] == player
      return p[:points]
      end
     end
   end
+end
 def shoe_size
+  hash= game_hash
+  hash.each do |team|
+    team[:players].each do |p|
+     if p[:player_name] == player
+     return p[:shoe_size]
+     end
+    end
+  end
 end
 
+def team_colors(team_name)
+hash= game_hash
+color_arr =[]
+hash.each do |team|
+  if team[:team_name] = team_name
+    return team[:colors]
+  end
+end
+end
+
+def player_numbers (team_name)
+  
+  
+end
+## hash creation methods
 def make_colors(*args)
   color_arr= []
   args.each {|color| color_arr.push(color)}
