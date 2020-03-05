@@ -46,7 +46,7 @@ def team_colors(team_name)
 hash= game_hash()
 color_arr =[]
 hash.each do |team, value|
-  if value[:team_name] = team_name
+  if value[:team_name] == team_name
     binding.pry
     return value[:colors]
   end
