@@ -59,6 +59,7 @@ def make_home()
   p1 = make_player("Alan Anderson", 0,16,22,12,12,3,1,1)
   p2= make_player("Reggie Evans", 30,14,12,12,12,12,12,7)
   p3= make_player("Brook Lopez",11,17,17,19,10,3,1,15)
-  p4= make_player()
-  p5=
+  p4= make_player("Mason Plumlee",1,19,26,11,6,3,8,5)
+  p5= make_player("Jason Terry",31,15,19,2,2,4,11,1)
+  arr.push(p1)
 end
