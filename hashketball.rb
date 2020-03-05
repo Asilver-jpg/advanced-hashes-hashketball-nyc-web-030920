@@ -24,7 +24,6 @@ def make_colors(*args)
   args.each {|color| color_arr.push(color)}
   color_arr
 end
-end
 
 def make_team (name, colors, players)
   
