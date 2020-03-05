@@ -22,6 +22,7 @@ def num_points_scored (player)
   hash.each do |team|
     team[:players].each do |p|
      if p[:player_name] == player
+       binding.pry
      return p[:points]
      end
     end
