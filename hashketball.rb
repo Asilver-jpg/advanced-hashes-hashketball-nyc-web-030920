@@ -47,14 +47,18 @@ def make_away()
   p4=make_player("Ben Gordon",8,15,33,3,2,1,1,0)
   p5= make_player("Kemba Walker",33,15,6,12,12,7,5,12)
   arr.push(p1)
-  
+   arr.push(p2)
+    arr.push(p3)
+     arr.push(p4)
+      arr.push(p5)
+  arr
 end
 
 def make_home()
   arr=[]
-  p1 = 
-  p2= 
-  p3= 
-  p4=
+  p1 = make_player("Alan Anderson", 0,16,22,12,12,3,1,1)
+  p2= make_player("Reggie Evans", 30,14,12,12,12,12,12,7)
+  p3= make_player("Brook Lopez",11,17,17,19,10,3,1,15)
+  p4= make_player()
   p5=
 end
