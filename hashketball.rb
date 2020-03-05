@@ -1,12 +1,21 @@
+require "pry"
 def game_hash()
   
   game = {
-    :home =>{},
-    :away =>{}
+    :home =>{
+      :team_name => "Brooklyn Nets",
+      :colors => make_colors("Black", "White"),
+      :players => make_home()
+    },
+    :away =>{
+       :team_name => "Charlotte Hornets",
+      :colors => make_colors("Turquoise", "Purple"),
+      :players => make_away()
+    }
     
   }
-  
-  
+  binding.pry
+  game
 end
 
 
@@ -62,4 +71,9 @@ def make_home()
   p4= make_player("Mason Plumlee",1,19,26,11,6,3,8,5)
   p5= make_player("Jason Terry",31,15,19,2,2,4,11,1)
   arr.push(p1)
+  arr.push(p2)
+  arr.push(p3)
+  arr.push(p4)
+  arr.push(p5)
+  arr
 end
