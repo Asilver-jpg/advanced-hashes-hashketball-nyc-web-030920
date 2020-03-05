@@ -84,16 +84,18 @@ def player_stats(name)
   end
 
 def big_shoe_rebounds()
-  shoe_name =""
+  rebounds=0
   largest_shoe=0
   hash= game_hash()
   hash.each do |team|
     team[:players].each do |player|
       if player[:shoe_size] > largest_shoe
-        shoe_name= player[:player]
+        rebounds= player[:rebounds]
+        largest_shoe = player[:shoe_size]
       end
     end
   end
+  rebounds
 end
 ## hash creation methods
 def make_colors(*args)
