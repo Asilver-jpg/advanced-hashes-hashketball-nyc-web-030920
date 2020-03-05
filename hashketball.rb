@@ -29,13 +29,6 @@ def num_points_scored (player)
      end
     end
   end
-def team_names()
-  hash= game_hash()
-  team_arr=[]
-  hash.each do |team, value|
-    team_arr << value[:team_name]
-  end
-  return team_arr
 end
 def shoe_size(player)
   hash= game_hash()
