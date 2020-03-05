@@ -18,7 +18,7 @@ def game_hash()
 end
 ## methods
 def num_points_scored (player)
-  hash= game_hash
+  hash= game_hash()
   hash.each do |team|
     team[:players].each do |p|
      if p[:player_name] == player
@@ -28,7 +28,7 @@ def num_points_scored (player)
   end
 end
 def shoe_size
-  hash= game_hash
+  hash= game_hash()
   hash.each do |team|
     team[:players].each do |p|
      if p[:player_name] == player
@@ -39,7 +39,7 @@ def shoe_size
 end
 
 def team_colors(team_name)
-hash= game_hash
+hash= game_hash()
 color_arr =[]
 hash.each do |team|
   if team[:team_name] = team_name
@@ -49,7 +49,7 @@ end
 end
 
 def player_numbers (team_name)
-  hash= game_hash
+  hash= game_hash()
 numbers =[]
   hash.each do |team|
     if team[:team_name] = team_name
@@ -62,25 +62,39 @@ numbers =[]
 end
 
 def player_stats(name)
-   hash= game_hash
+   hash= game_hash()
   stats ={}
   hash.each do |team|
     team[:players].each do |player|
       if player == name
       stats = {
-        
-        
-        
-        
+        :number => player[:number],
+        :shoe => player[:shoe],
+        :points => player[:points],
+        :rebounds => player[:rebounds],
+        :assists => player[:assists],
+        :steals => player[:steals],
+        :blocks => player[:blocks],
+        :slam_dunks => player[:slam_dunks]
       }
       end
     end
+  end
+  stats
+  end
+
+def big_shoe_rebounds()
+  shoe_name =""
+  largest_shoe=0
+  hash= game_hash()
+  hash.each do |team|
+    team[:players].each do |player|
+      if player[:shoe_size] > largest_shoe
+        shoe_name= player[:playe]
       end
     end
   end
-  numbers
 end
-
 ## hash creation methods
 def make_colors(*args)
   color_arr= []
