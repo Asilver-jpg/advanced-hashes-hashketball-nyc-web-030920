@@ -72,7 +72,7 @@ def player_stats(name)
   hash.each do |team, value|
     value[:players].each do |player|
       if player[:player_name] == name
-        binding.pry
+        
       stats = {
         :number => player[:number],
         :shoe => player[:shoe],
